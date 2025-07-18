@@ -1,0 +1,75 @@
+{
+  "profiles" : [
+    {
+      "id" : "5AAB88AA-59BF-4706-8820-A2762E7A0556",
+      "name" : "Default",
+      "workspaces" : [
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.apple.Safari",
+              "iconPath" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/Resources/AppIcon.icns",
+              "name" : "Safari"
+            },
+            {
+              "bundleIdentifier" : "com.google.Chrome",
+              "iconPath" : "/Applications/Google Chrome.app/Contents/Resources/app.icns",
+              "name" : "Google Chrome"
+            }
+          ],
+          "display" : "Built-in Retina Display",
+          "id" : "5EE3A0A5-ABD3-43BC-94A6-789C2FAB9ACD",
+          "name" : "Browser",
+          "shortcut" : "cmd+1",
+          "symbolIconName" : "globe"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.github.wez.wezterm",
+              "iconPath" : "/Applications/WezTerm.app/Contents/Resources/terminal.icns",
+              "name" : "WezTerm"
+            }
+          ],
+          "display" : "Built-in Retina Display",
+          "id" : "9B07B2D7-E2ED-4C2F-A7C7-BDB2B4040244",
+          "name" : "Terminal",
+          "shortcut" : "cmd+2"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.todesktop.230313mzl4w4u92",
+              "iconPath" : "/Applications/Cursor.app/Contents/Resources/Cursor.icns",
+              "name" : "Cursor"
+            }
+          ],
+          "display" : "Built-in Retina Display",
+          "id" : "4D1636D1-B53E-40C5-9DAD-1B2F9FC92020",
+          "name" : "Code",
+          "shortcut" : "cmd+3",
+          "symbolIconName" : "text.document"
+        },
+        {
+          "apps" : [
+            {
+              "bundleIdentifier" : "com.apple.finder",
+              "iconPath" : "/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns",
+              "name" : "Finder"
+            },
+            {
+              "bundleIdentifier" : "com.apple.systempreferences",
+              "iconPath" : "/System/Applications/System Settings.app/Contents/Resources/PrefApp.icns",
+              "name" : "System Settings"
+            }
+          ],
+          "display" : "Built-in Retina Display",
+          "id" : "0087E0FA-EE83-48F8-845F-2FB97EBB1091",
+          "name" : "Desktop",
+          "shortcut" : "cmd+4",
+          "symbolIconName" : "desktopcomputer"
+        }
+      ]
+    }
+  ]
+}
