@@ -1,0 +1,133 @@
+authtoken: 
+region: ap
+console_ui: true
+version: "2"
+tunnels:
+    adobe:
+        proto: http
+        addr: 5000
+        subdomain: app-adobe-sign
+    adp:
+        proto: http
+        addr: 5000
+        subdomain: sa-test-app-adp
+    axonify:
+        proto: http
+        addr: 5000
+        subdomain: app-axonify
+    base:
+        proto: http
+        addr: 5000
+        subdomain: base-speakap
+    compliment-wall:
+        proto: http
+        addr: 5000
+        subdomain: app-compliment-wall
+    igloo:
+        proto: http
+        addr: 5000
+        subdomain: app-igloo-sync
+    json:
+        proto: http
+        addr: 9900
+        subdomain: json-resources
+    kazoo:
+        proto: http
+        addr: 5000
+        subdomain: app-kazoo
+    kronos:
+        proto: http
+        addr: 5000
+        subdomain: app-ukg-dimensions
+    kronos2:
+        proto: http
+        addr: 5001
+        subdomain: app-ukg-dimensions2
+    manus:
+        proto: http
+        addr: 5000
+        subdomain: app-manus
+    maps:
+        proto: http
+        addr: 5000
+        subdomain: app-google-maps
+    outlook:
+        proto: http
+        addr: 5000
+        subdomain: app-outlook-calendar
+    sharepoint:
+        proto: http
+        addr: 5000
+        subdomain: sharepoint
+    sso:
+        proto: http
+        addr: 5000
+        subdomain: sso-test
+    storeforce:
+        proto: http
+        addr: 5000
+        subdomain: app-storeforce
+    test:
+        proto: http
+        addr: 5000
+        subdomain: app-test
+    visma:
+        proto: http
+        addr: 5000
+        subdomain: app-visma
+    tamigo:
+        proto: http
+        addr: 5000
+        subdomain: app-tamigo
+    google-calendar:
+        proto: http
+        addr: 5000
+        subdomain: app-calendar
+    drive:
+        proto: http
+        addr: 5000
+        subdomain: app-google-drive
+    doc:
+        proto: http
+        addr: 5000
+        subdomain: app-google-doc
+    forms:
+        proto: http
+        addr: 5000
+        subdomain: app-google-forms
+    sheet:
+        proto: http
+        addr: 5000
+        subdomain: app-google-sheet
+    app-kronos:
+        proto: http
+        addr: 8000
+        subdomain: app-kronos
+    leaves:
+        proto: http
+        addr: 5000
+        subdomain: speakap-leaves
+    awardco:
+        proto: http
+        addr: 3000
+        subdomain: awardco
+    syndicator:
+        proto: http
+        addr: 5000
+        subdomain: syndicator
+    ccc:
+        proto: http
+        addr: 3000
+        subdomain: ccc-app
+    ff:
+        proto: http
+        addr: 3000
+        subdomain: ff
+    vico:
+        proto: http
+        addr: 5000
+        subdomain: vico
+    bridge:
+        proto: http
+        addr: 5000
+        subdomain: app-tester
