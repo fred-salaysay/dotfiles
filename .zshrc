@@ -7,11 +7,23 @@ zstyle ":omz:update" mode auto      # update automatically without asking
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 COMPLETION_WAITING_DOTS="true"
+
 HIST_STAMPS="mm/dd/yyyy"
+HISTSIZE=5000
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
 plugins=(
   git
   tmux
+  dirhistory
 )
 
 source $ZSH/oh-my-zsh.sh
