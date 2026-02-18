@@ -77,7 +77,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # 3. ALT-C (Targeted to your ~/dev folder)
 # REMOVED: "| fzf" from the end
-export FZF_ALT_C_COMMAND="fdfind --type d --hidden --exclude .git --exclude node_modules . ~/dev"
+export FZF_ALT_C_COMMAND="fdfind --type d --hidden --exclude .git --exclude node_modules . ~/dev | xargs -d'\n' stat --format='%Y\t%n' 2>/dev/null | sort -rn | cut -f2-"
 
 # 4. Global Options (UI & Preview)
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --info=inline --border \
