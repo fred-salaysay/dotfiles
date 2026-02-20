@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/home/fred/.opencode/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
@@ -94,3 +94,9 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fdfind --type=d --hidden --exclude .git . "$1"
 }
+
+# =============================================== #
+# oh-my-posh
+# requirements: oh-my-posh
+# =============================================== #
+eval "$(oh-my-posh init zsh --config atomic)"
