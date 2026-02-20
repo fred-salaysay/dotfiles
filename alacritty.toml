@@ -1,0 +1,46 @@
+# General settings
+[general]
+import = [] # You can import theme files here later
+
+[window]
+padding = { x = 12, y = 12 }       # Breathability for long coding sessions
+dynamic_padding = true             # Keeps centering consistent
+opacity = 1                        # Slight transparency to see docs behind
+blur = true                        # Makes text pop against transparent bg
+decorations = "Buttonless"
+
+[font]
+normal = { family = "CaskaydiaCove Nerd Font", style = "Regular" } # Top-tier for dev
+size = 10.0                        # Balanced size for high-DPI screens
+
+[cursor]
+style = { shape = "Beam", blinking = "On" } # "Beam" mimics VS Code/IDE feel
+unfocused_hollow = true            # Visually see which window is active
+
+[selection]
+save_to_clipboard = true           # Auto-copy on select (massive time saver)
+
+[terminal]
+# Points Alacritty to the WSL executable
+shell = { program = "wsl.exe", args = ["-d", "arch-dev", "--cd", "~/dev"] }
+
+[keyboard]
+bindings = [
+    # Open new terminal in current directory
+    { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }, #
+    # Quick scrollback navigation
+    { key = "U", mods = "Control|Shift", action = "ScrollPageUp" },
+    { key = "D", mods = "Control|Shift", action = "ScrollPageDown" },
+]
+
+# Essential for web dev: Clickable links and file paths
+[[hints.enabled]]
+regex = "(https?://|git@|ssh://)[^\\s]+" # Clickable URLs
+command = { program = "open" }           # Use "xdg-open" on Linux
+mouse = { enabled = true }
+
+[[hints.enabled]]
+regex = "[^ ]+\\.(js|ts|html|css|json):\\d+:\\d+" # Clickable file:line:col
+command = { program = "code", args = ["--goto"] } # Opens directly in VS Code
+mouse = { enabled = true }
+
