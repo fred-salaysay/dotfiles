@@ -99,4 +99,4 @@ _fzf_compgen_dir() {
 # oh-my-posh
 # requirements: oh-my-posh
 # =============================================== #
-eval "$(oh-my-posh init zsh --config atomic)"
+eval "$(oh-my-posh init zsh --config '/home/fred/dev/dotfiles.git/main/oh-my-posh/atomic.json')"
